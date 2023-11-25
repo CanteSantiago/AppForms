@@ -18,6 +18,10 @@ export class SwitchesPageComponent {
 
   constructor( private fb: FormBuilder ) {}
 
+  isValidField( field: string ): boolean | null {
+    return this.myForm.controls[field].errors
+      && this.myForm.controls[field].touched;
+  }
 
   onSave() {
 
