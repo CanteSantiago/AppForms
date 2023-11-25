@@ -12,7 +12,7 @@ export class EmailValidator implements AsyncValidator{
 
       console.log({ email });
 
-      if ( email === 'fsanti@google.com' ) {
+      if ( email === 'santi@google.com' ) {
         subscriber.next({ emailTaken: true });
         subscriber.complete();
         // return;
