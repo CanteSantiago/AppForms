@@ -55,6 +55,10 @@ export class DynamicPageComponent {
 
   constructor( private fb: FormBuilder ) {}
 
+  onDeleteFavorite( index:number ):void {
+    this.favoriteGames.removeAt(index);
+  }
+
 
 onSubmit():void {
   if (this.myForm.invalid){

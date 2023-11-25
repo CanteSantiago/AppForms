@@ -45,7 +45,7 @@ autocomplete="off">
                   <input [formControlName]="i"
                     class="form-control">
 
-                  <button
+                  <button (click)="onDeleteFavorite(i)"
                           class="btn btn-outline-danger"
                           type="button">
                     Eliminar
